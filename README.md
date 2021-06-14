@@ -1,2 +1,2 @@
-# happy-discover
+# Happy
 I made this project during the Next Level Week #3 from RocketSeat
