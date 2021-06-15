@@ -49,14 +49,6 @@ main h1 {
     background-color: #96feff;
 }
 
-/* ------------------ ANIMATIONS ------------------ */
-
-.animate-up {
-    animation-name: up;
-    animation-duration: 300ms;
-    animation-fill-mode: backwards;
-}
-
 
 /* ------------------ DESKTOP ------------------ */
 @media (min-width: 760px) {
