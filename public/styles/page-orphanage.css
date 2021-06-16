@@ -35,4 +35,56 @@ aside.sidebar footer button:hover {
     padding-left: 11rem;
 }
 
-/* ------------------ BUTTON ------------------ */
+/* ------------------ DETAILS ------------------ */
+.orphanage-details {
+    width: 70rem;
+    margin: 6.4rem auto;
+    background: #fff;
+    border: 1px solid #D3E2E5;
+    border-radius: 2rem;
+    overflow: hidden;   /* LIMITS ITS CONTENT */
+}
+
+.orphanage-details > img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+    margin: 1.6rem 4rem 0;
+}
+
+.images button {
+    border: none;
+    background: none;
+    height: 8.8rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    opacity: .6;
+    cursor: pointer;
+    transition: opacity 400ms;
+}
+
+.images button:hover, .images button.active {
+    opacity: 1;
+}
+
+.images button img {
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
