@@ -18,3 +18,18 @@ const icon = L.icon({
 })
 
 L.marker([-22.494188,-43.2065701], { icon }).addTo(map)   // Create &  add marker
+
+
+/* ------------------ IMAGE GALLERY ------------------ */
+function selectImage(event) {
+    const button = event.currentTarget;
+    const buttons = document.querySelectorAll(".images button");
+    const image = button.children[0];
+    const imageContainer = document.querySelector(".orphanage-details > img");
+    buttons.forEach(btn => {
+        btn.classList.remove("active");
+    });
+    button.classList.add("active");
+    // imageContainer.setAttribute("src", image.getAttribute("src"));
+    imageContainer.src = image.src;
+}
