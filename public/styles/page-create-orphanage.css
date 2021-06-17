@@ -1,1 +1,15 @@
- 
+#page-create-orphanage {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* ------------------ MAP ------------------ */
+
+.map-container {
+    margin-bottom: 4rem;
+}
+
+.map-container footer {
+    background-color: #F5F8FA;
+}
