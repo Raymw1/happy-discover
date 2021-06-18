@@ -35,6 +35,17 @@ function addPhotoField() {
     }
 }
 
+function deleteField(event) {
+    const spanField = event.currentTarget;
+    const uploadField = document.querySelectorAll(".new-upload");
+    if (uploadField.length <= 1) {
+        spanField.previousElementSibling.value = "";
+        return
+    }   else {
+        spanField.parentNode.remove()
+    }
+}
+
 function chechPhotoField(newUpload) {
     for (let upl of newUpload) {
         if ((upl.querySelector("input").value).trim() === "") {
@@ -42,4 +53,14 @@ function chechPhotoField(newUpload) {
         }
     }
     return true;
+}
+
+
+// ------------------ YES/NO WEEKEND ------------------
+function toggleSelect(event) {
+    const btnClicked = event.currentTarget;
+    const input = document.querySelector(`[name="open-on-weekends"]`)
+    document.querySelectorAll(".button-select button").forEach(btn => btn.classList.remove("active"));
+    btnClicked.classList.add("active");
+    input.value = btnClicked.dataset.value;
 }

@@ -72,6 +72,7 @@
     line-height: 2.6rem;
     color: #5C8599;
     cursor: pointer;
+    transition: 400ms;
 }
 
 .input-block .button-select button:nth-child(1) {   /* or :first-child */
