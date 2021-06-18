@@ -1,0 +1,26 @@
+{
+  "name": "happy-discover",
+  "version": "1.0.0",
+  "description": "I made this project during the Next Level Week #3 from RocketSeat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raymw1/happy-discover.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raymw1/happy-discover/issues"
+  },
+  "homepage": "https://github.com/Raymw1/happy-discover#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "nodemon": "^2.0.7"
+  }
+}

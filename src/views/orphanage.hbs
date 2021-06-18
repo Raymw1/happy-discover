@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="public/assets/images/logo-icon.png">
-    <link rel="stylesheet" href="public/styles/main.css">
-    <link rel="stylesheet" href="public/styles/sidebar.css">
-    <link rel="stylesheet" href="public/styles/map.css">
-    <link rel="stylesheet" href="public/styles/page-orphanage.css">
-    <link rel="stylesheet" href="public/styles/buttons.css">
-    <link rel="stylesheet" href="public/styles/animations.css   ">
+    <link rel="icon" href="assets/images/logo-icon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/map.css">
+    <link rel="stylesheet" href="styles/page-orphanage.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/animations.css   ">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -26,18 +26,18 @@
 <body>
     <div id="page-orphanage">
         <aside class="animate-right sidebar">
-            <img src="./public/assets/images/map-marker.svg" alt="Happy">
+            <a href="/"><img src="./assets/images/map-marker.svg" alt="Happy"></a>
             <footer>
                 <button onclick="history.back()">
-                    <img src="./public/assets/images/arrow-back.svg" alt="Voltar">
+                    <img src="./assets/images/arrow-back.svg" alt="Voltar">
                 </button>
             </footer>
         </aside>
         <main class="animate-appear with-sidebar">
             <div class="orphanage-details">
-                <img id="primary-image" src="./public/assets/images/home.jpg" alt="Lar das meninas">
+                <img id="primary-image" src="./assets/images/home.jpg" alt="Lar das meninas">
                 <div class="images">
-                    <button class="active" onclick="selectImage(event)" type="button"><img src="./public/assets/images/home.jpg"
+                    <button class="active" onclick="selectImage(event)" type="button"><img src="./assets/images/home.jpg"
                             alt="Lar das meninas"></button>
                     <button type="button" onclick="selectImage(event)"><img src="https://source.unsplash.com/random?id=1" alt="Lar das meninas"></button>
                     <button type="button" onclick="selectImage(event)"><img src="https://source.unsplash.com/random?id=2" alt="Lar das meninas"></button>
@@ -60,16 +60,16 @@
                     <p>Venha como se sentir a vontade e traga muito amor e paciência para dar.</p>
                     <div class="open-details">
                         <div class="hour">
-                            <img src="./public/assets/images/clock.svg" alt="Horários">
+                            <img src="./assets/images/clock.svg" alt="Horários">
                             Horário de visitas Das 18h até 8h
                         </div>
                         <div class="open-on-weekends">
-                            <img src="./public/assets/images/info.svg" alt="Informações">
+                            <img src="./assets/images/info.svg" alt="Informações">
                             Atendemos fim de semana
                         </div>
                     </div>
                     <button type="button" class="primary-button">
-                        <img src="./public/assets/images/whatsapp.svg" alt="Chamar no Whatsapp">
+                        <img src="./assets/images/whatsapp.svg" alt="Chamar no Whatsapp">
                         Entrar em contato
                     </button>
                 </div>
@@ -77,7 +77,7 @@
         </main>
 
     </div>
-    <script src="./public/scripts/page-orphanage.js"></script>
+    <script src="./scripts/page-orphanage.js"></script>
 </body>
 
 </html>
