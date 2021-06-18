@@ -23,4 +23,23 @@ map.on("click", function(event) {
 })
 
 // ------------------ PHOTOS FIELD UPLOAD ------------------
+function addPhotoField() {
+    const imagesContainer = document.querySelector(".images-upload");
+    const uploadField = document.querySelectorAll(".new-upload");
+    if (chechPhotoField(uploadField)) {
+        const newUpload = uploadField[uploadField.length-1].cloneNode(true);
+        newUpload.children[0].value = '';
+        imagesContainer.appendChild(newUpload);
+    }   else {
+        alert("Por favor, preencha o último campo antes de adicionar o próximo!");
+    }
+}
 
+function chechPhotoField(newUpload) {
+    for (let upl of newUpload) {
+        if ((upl.querySelector("input").value).trim() === "") {
+            return false;
+        }
+    }
+    return true;
+}

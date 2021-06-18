@@ -59,6 +59,10 @@ fieldset legend {
     transition: 1s;
 }
 
+.new-upload + .new-upload {
+    margin-top: 1.2rem;
+}
+
 .input-block input:valid, .input-block textarea:valid {
     border: 1px solid #A1E9C5;
 }
