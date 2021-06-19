@@ -59,7 +59,7 @@ function chechPhotoField(newUpload) {
 // ------------------ YES/NO WEEKEND ------------------
 function toggleSelect(event) {
     const btnClicked = event.currentTarget;
-    const input = document.querySelector(`[name="open-on-weekends"]`)
+    const input = document.querySelector(`[name="open_on_weekends"]`)
     document.querySelectorAll(".button-select button").forEach(btn => btn.classList.remove("active"));
     btnClicked.classList.add("active");
     input.value = btnClicked.dataset.value;
