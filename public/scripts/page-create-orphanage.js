@@ -64,3 +64,15 @@ function toggleSelect(event) {
     btnClicked.classList.add("active");
     input.value = btnClicked.dataset.value;
 }
+
+// ------------------ VALIDATE FORM ------------------
+function validate(event) {
+    // LAT LNG
+    const latField = event.currentTarget.querySelector(`[name="lat"]`).value !== "";
+    const lngField = event.currentTarget.querySelector(`[name="lng"]`).value !== "";
+    const needsLatAndLng = latField && lngField ? false : true;
+    if (needsLatAndLng) {
+        event.preventDefault();
+        alert("Selecione o local no mapa")
+    }
+}
